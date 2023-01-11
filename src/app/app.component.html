@@ -1,0 +1,20 @@
+<div class="cabecero">
+  <div class="presupuesto">
+      <app-cabecero
+      [presupuestoDisponible]="presupuestoDisponible"
+      [totalIngesos]="totalIngesos"
+      [totalEgresos]="totalEgresos"
+      [porcentaje]="getPorcentaje()"
+      ></app-cabecero>
+  </div>
+</div>
+<app-formulario></app-formulario>
+
+  <div class="contenedor limpiarEstilos">
+    <app-ingreso></app-ingreso>
+      
+
+    <app-egreso
+    [totalIngreso]="totalIngesos"
+    ></app-egreso>    
+  </div>
